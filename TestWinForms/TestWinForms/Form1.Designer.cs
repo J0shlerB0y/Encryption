@@ -37,6 +37,7 @@ namespace TestWinForms
             this.key_code = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.copy_but = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // but_trans
@@ -104,11 +105,22 @@ namespace TestWinForms
             this.label3.Text = "Введите текст";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // copy_but
+            // 
+            this.copy_but.Location = new System.Drawing.Point(518, 400);
+            this.copy_but.Name = "copy_but";
+            this.copy_but.Size = new System.Drawing.Size(154, 50);
+            this.copy_but.TabIndex = 7;
+            this.copy_but.Text = "Копировать";
+            this.copy_but.UseVisualStyleBackColor = true;
+            this.copy_but.Click += new System.EventHandler(this.copy_but_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.copy_but);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.key_code);
@@ -119,7 +131,6 @@ namespace TestWinForms
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +146,7 @@ namespace TestWinForms
         private System.Windows.Forms.TextBox key_code;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button copy_but;
     }
 }
 
