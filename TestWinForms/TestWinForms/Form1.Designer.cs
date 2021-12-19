@@ -38,14 +38,16 @@ namespace TestWinForms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.copy_but = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // but_trans
             // 
             this.but_trans.AutoSize = true;
-            this.but_trans.Location = new System.Drawing.Point(265, 400);
+            this.but_trans.Location = new System.Drawing.Point(398, 615);
+            this.but_trans.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.but_trans.Name = "but_trans";
-            this.but_trans.Size = new System.Drawing.Size(150, 50);
+            this.but_trans.Size = new System.Drawing.Size(225, 77);
             this.but_trans.TabIndex = 0;
             this.but_trans.Text = "Преобразовать";
             this.but_trans.UseVisualStyleBackColor = true;
@@ -54,9 +56,10 @@ namespace TestWinForms
             // input_text
             // 
             this.input_text.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.input_text.Location = new System.Drawing.Point(90, 190);
+            this.input_text.Location = new System.Drawing.Point(135, 282);
+            this.input_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.input_text.Name = "input_text";
-            this.input_text.Size = new System.Drawing.Size(500, 200);
+            this.input_text.Size = new System.Drawing.Size(748, 308);
             this.input_text.TabIndex = 1;
             this.input_text.Text = "Здесь появится преобразованный тескт";
             this.input_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,58 +71,74 @@ namespace TestWinForms
             this.type_of_trans.Items.AddRange(new object[] {
             "Перевод из зашифрованного текста в читаемый",
             "Перевод из читаемого текста в зашифрованный"});
-            this.type_of_trans.Location = new System.Drawing.Point(90, 15);
+            this.type_of_trans.Location = new System.Drawing.Point(135, 89);
+            this.type_of_trans.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.type_of_trans.Name = "type_of_trans";
-            this.type_of_trans.Size = new System.Drawing.Size(500, 21);
+            this.type_of_trans.Size = new System.Drawing.Size(748, 28);
             this.type_of_trans.TabIndex = 2;
             // 
             // text_to_trans
             // 
-            this.text_to_trans.Location = new System.Drawing.Point(90, 150);
+            this.text_to_trans.Location = new System.Drawing.Point(135, 251);
+            this.text_to_trans.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.text_to_trans.Name = "text_to_trans";
-            this.text_to_trans.Size = new System.Drawing.Size(500, 20);
+            this.text_to_trans.Size = new System.Drawing.Size(748, 26);
             this.text_to_trans.TabIndex = 3;
             // 
             // key_code
             // 
-            this.key_code.Location = new System.Drawing.Point(265, 80);
+            this.key_code.Location = new System.Drawing.Point(398, 171);
+            this.key_code.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.key_code.Name = "key_code";
-            this.key_code.Size = new System.Drawing.Size(150, 20);
+            this.key_code.Size = new System.Drawing.Size(223, 26);
             this.key_code.TabIndex = 4;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(265, 50);
+            this.label2.Location = new System.Drawing.Point(398, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 20);
+            this.label2.Size = new System.Drawing.Size(225, 31);
             this.label2.TabIndex = 5;
             this.label2.Text = "Введите ключ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(265, 113);
+            this.label3.Location = new System.Drawing.Point(139, 211);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 23);
+            this.label3.Size = new System.Drawing.Size(748, 35);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Введите текст";
+            this.label3.Text = "Введите текст ( больше 0 и меньше 101)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // copy_but
             // 
-            this.copy_but.Location = new System.Drawing.Point(518, 400);
+            this.copy_but.Location = new System.Drawing.Point(771, 615);
+            this.copy_but.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.copy_but.Name = "copy_but";
-            this.copy_but.Size = new System.Drawing.Size(154, 50);
+            this.copy_but.Size = new System.Drawing.Size(231, 77);
             this.copy_but.TabIndex = 7;
             this.copy_but.Text = "Копировать";
             this.copy_but.UseVisualStyleBackColor = true;
             this.copy_but.Click += new System.EventHandler(this.copy_but_Click);
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(398, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(225, 57);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Выберите вид преобразования";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(1026, 709);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.copy_but);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -129,8 +148,9 @@ namespace TestWinForms
             this.Controls.Add(this.but_trans);
             this.Controls.Add(this.input_text);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Encryption";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,6 +167,7 @@ namespace TestWinForms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button copy_but;
+        private System.Windows.Forms.Label label4;
     }
 }
 

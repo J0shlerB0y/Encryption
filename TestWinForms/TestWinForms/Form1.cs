@@ -12,6 +12,11 @@ namespace TestWinForms
 {
     public partial class Form1 : Form
     {
+        char[] alphabet = new char[] { 
+            ' ','~', 'к','q','v', 'в', 'о','0', 'я','o','`','2', 'п', 'w',';','з','.','x','ц','+', 'с','p', '@', 'л', '3',
+            'а', 'т', 'a','ю', '#', '4','г', 'и','i','\'','5','6','7','s','ж','%','d','t','f','y',
+            'ё', '&', 'у','g', '8','9','h','$','l',']','_','{','b','й','2','*','z', 'ф', '?','х', 'c','м','D','(','1','x', 'ч', 'д',')', ':', 'б', 'щ',
+            'ъ','^','\\', 'ы','j','№','>', 'н', 'р','/','e', 'е','-', 'n','ь','r', ',','k','э','ш','u','\"','=', 'm', '[','}'};
         public Form1()
         {
             InitializeComponent();
@@ -38,30 +43,23 @@ namespace TestWinForms
 
         private StringBuilder decryption(char[] input)
         {
-            char[] alphabet = new char[] { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я' };
             StringBuilder output = new StringBuilder();
             for (int i = 0; i < input.Length; i++)
             {
-                if (input[i] == ' ')
+                for (int j = 0; j < alphabet.Length; j++)
                 {
-                    output.Append(input[i]);
-                }
-                else
-                {
-                    for (int j = 0; j < alphabet.Length; j++)
+                    if (input[i] == alphabet[j])
                     {
-                        if (input[i] == alphabet[j])
+                        if (j - Convert.ToInt32(key_code.Text) >= 0)
                         {
-                            if (j - Convert.ToInt32(key_code.Text) >= 0)
-                            {
-                                output.Append(alphabet[j - Convert.ToInt32(key_code.Text)]);
-                            }
-                            else
-                            {
-                                output.Append(alphabet[j - Convert.ToInt32(key_code.Text) + alphabet.Length]);
-                            }
+                            output.Append(alphabet[j - Convert.ToInt32(key_code.Text)]);
+                        }
+                        else
+                        {
+                            output.Append(alphabet[j - Convert.ToInt32(key_code.Text) + alphabet.Length]);
                         }
                     }
+                    
                 }
             }
             return output;
@@ -69,16 +67,9 @@ namespace TestWinForms
 
         private StringBuilder encryption(char[] input)
         {
-            char[] alphabet = new char[] { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я' };
             StringBuilder output = new StringBuilder();
             for(int i = 0; i < input.Length;i++)
             {
-                if (input[i] == ' ')
-                {
-                    output.Append(input[i]);
-                }
-                else
-                {
                     for (int j = 0; j < alphabet.Length; j++)
                     {
                         if (input[i] == alphabet[j])
@@ -93,7 +84,7 @@ namespace TestWinForms
                             }
                         }
                     }
-                }
+                
             }
             return output;
         }
