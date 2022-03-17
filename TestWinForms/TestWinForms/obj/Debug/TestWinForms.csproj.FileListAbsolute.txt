@@ -1,0 +1,11 @@
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\bin\Debug\TestWinForms.exe.config
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\bin\Debug\TestWinForms.exe
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\bin\Debug\TestWinForms.pdb
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.csproj.AssemblyReference.cache
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.Form1.resources
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.Properties.Resources.resources
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.csproj.GenerateResource.cache
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.csproj.CoreCompileInputs.cache
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.exe
+C:\Users\artem\OneDrive\Документы\GitHub\Encryption\TestWinForms\TestWinForms\obj\Debug\TestWinForms.pdb

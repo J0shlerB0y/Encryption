@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "65c1d4b9-25f0-4a9b-b381-c8b1e1d5f6a9": {
+      "ProjectGuid": "65c1d4b9-25f0-4a9b-b381-c8b1e1d5f6a9",
+      "DisplayName": "TestWinForms",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
